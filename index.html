@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22ru%22%7D%7D">
+
+  <head>
+    <title>ROBOX</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body data-color-theme="light" data-n-head="%7B%22data-color-theme%22:%7B%22ssr%22:%22light%22%7D%7D">
+
+    <header>
+      <div class="just container">
+        <a href="/" aria-current="page">
+          <img src="ro.png" alt="ROBOX" class="dib">
+        </a>
+        <nav>
+          <ul class="menu_list">
+            <li class="menu_item">
+                <button onclick="perguntaOnFn()" type="button" class="ui-button">
+                  Записаться
+                </button>
+            </li>
+
+            <li class="menu_item">
+              <a href="tel:+79873804778" class="footer__phone-link ui-link">          
+                <button type="button" class="ui-button">
+                  +7 (987) 380-47-78
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container pad">
+        <ul class="catalog">
+          <li class="catalog__item">
+            <article data-color-theme="dark" class="catalog-card catalog__item" style="background-color:#17E6C8;">
+              <h2>ANDROID</h2>
+              <ul class="pontos">
+                <li class="cada">1 неделя</li>
+                <li class="cada">9 Часов</li>
+                <li class="cada">24 000₽</li>
+              </ul>
+                <button onclick="androidOnFn()" type="button" class="ui-button">
+                  Подробнее
+                </button>
+            </article>
+          </li>
+
+          <li class="catalog__item">
+            <article data-color-theme="dark" class="catalog-card catalog__item" style="background-color:#ff6000;">
+              <h2>Начинка</h2>
+              <ul class="pontos">
+                <li class="cada">XML - JAVA - ANDROID</li>
+                <li class="cada">Layouts - Class - Object</li>
+                <li class="cada">Variable - Method - Library</li>
+              </ul>
+                <button onclick="conteudoOnFn()" type="button" class="ui-button">
+                  Подробнее
+                </button>
+            </article>
+          </li>
+
+          <li class="catalog__item">
+            <article data-color-theme="dark" class="catalog-card catalog__item" style="background-color:#28c941;">
+              <h2>Результат</h2>
+              <ul class="pontos">
+                <li class="cada">Техники - подходы</li>
+                <li class="cada">Задачи - лучшие решения</li>
+                <li class="cada">Багаж навыков и знаний</li>
+              </ul>
+                <button onclick="resultadoOnFn()" type="button" class="ui-button">
+                  Подробнее
+                </button>
+            </article>
+          </li>
+
+          <li class="catalog__item">
+            <article data-color-theme="dark" class="catalog-card catalog__item" style="background-color:#ffd000;">
+              <h2>Работа</h2>
+              <ul class="pontos">
+                <li class="cada">Оформление портфолио</li>
+                <li class="cada">Первое собеседование*</li>
+                <li class="cada">Работа</li>
+              </ul>
+                <button onclick="trabalhoOnFn()" type="button" class="ui-button">
+                  Подробнее
+                </button>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <main>
+      <!-- PERGUNTA -->
+      <section id="pergunta" class="subscribe">
+        <div class="container bordas" style="background-color:#17E6C8;">
+          <ul class="catalog">
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <h2>Есть вопросы?</h2>
+                <ul class="pontos">
+                  <li class="cada">
+                    Если у вас&nbsp;есть вопрос&nbsp;или&nbsp;свои&nbsp;предложения&nbsp;оставьте свой номер&nbsp;— я&nbsp;позвоню, чтобы ответить на&nbsp;все ваши вопросы.
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <h2>Ваш контакт</h2>
+                <ul class="pontos">
+                  <li class="cada" style=" border-style: none;">
+                    <div class="form-observer subscribe__form">
+                      <form action="/api/v5/notifications/free-access/" enctype="application/x-www-form-urlencoded" class="ui-form ui-form--main ui-form--default">
+                        <ul>
+                          <li style="margin-bottom: 10px;">
+                            <div class="ui-form__field">
+                              <div class="ui-field ui-field--grey">
+                                <label class="ui-field__label ui-field__label--grey">
+                                  <input spellcheck="false" name="name" type="text" value="" class="ui-field__input">
+                                  <span class="ui-field__name">
+                                    Имя
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li style="margin-bottom: 10px">
+                            <div class="ui-form__field">
+                              <div class="ui-field ui-field--grey">
+                                <label class="ui-field__label ui-field__label--grey">
+                                  <input spellcheck="true" name="phone" type="tel" value="" class="ui-field__input">
+                                  <span class="ui-field__name">
+                                    Телефон
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li style="margin-bottom: 10px">
+                            <div class="ui-form__field">
+                              <div class="ui-field ui-field--grey">
+                                <label class="ui-field__label ui-field__label--grey">
+                                  <input spellcheck="false" name="email" type="email" value="" class="ui-field__input">
+                                  <span class="ui-field__name">
+                                    Электронная почта
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <input name="direction_slug" type="hidden" value="all">
+                            <input name="action" type="hidden" value="consult">
+                            <input name="country_slug" type="hidden" value="ru">
+                            <div>
+                              <p class="ui-form__notice">
+                                Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на
+                                <a href="https://skillbox.ru/privacy_policy.pdf" target="_blank" class="ui-form__link ui-link ui-link--underline ui-link--standard">
+                                  обработку&nbsp;персональных&nbsp;данных
+                                </a>
+                                и
+                                <a href="https://skillbox.ru/terms_of_use.pdf" target="_blank" class="ui-form__link ui-link ui-link--underline ui-link--standard">
+                                  с&nbsp;правилами&nbsp;пользования Платформой
+                                </a>
+                              </p>
+                              <button onclick="perguntaOffFn()" type="button" style="width: 223px; margin-top: 16px;" class="ui-button">
+                                Отправить
+                              </button>
+                            </div>
+                          </li>
+                        </ul> 
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ANDOID -->
+      <section id="android" class="subscribe">
+        <div class="container bordas" style="background-color:#17E6C8;">
+          <ul class="catalog">
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <img src="https://robohash.org/23..1.234" width="200" height="200"/>
+              </article>
+            </li>
+
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <ul class="pontos">
+                  <li class="cada"></li>
+                  <li class="cada">
+                    <p>
+                      Для начало вы выбираете любой день и время в недели когда вам удобно. 1 урок начинает от 2 часов
+                    </p>
+                    <p>Стоимость каждого отдельного урока 2 500₽</p>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+          <button onclick="androidOffFn()" type="button" class="ui-button" style="margin-bottom: 50px;">
+            Хорошо
+          </button>
+        </div>
+      </section>
+
+      <!-- CONTEUDO -->
+      <section id="conteudo" class="subscribe">
+        <div class="container bordas" style="background-color:#ff6000;">
+          <ul class="catalog">
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <img src="https://robohash.org/74" width="200" height="200"/>
+              </article>
+            </li>
+
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <ul class="pontos">
+                  <li class="cada"></li>
+                  <li class="cada">
+                    <p>
+                      Вы получите основные понятия:
+                    </p>
+                    <p>
+                      XML, JAVA, ANDROID, Layouts, Class, Object, Variable, Method, Library и их применения.
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+          <button onclick="conteudoOffFn()" type="button" class="ui-button" style="margin-bottom: 50px;">
+            Хорошо
+          </button>
+        </div>
+      </section>
+
+      <!-- RESULTADO -->
+      <section id="resultado" class="subscribe">
+        <div class="container bordas" style="background-color:#28c941;">
+          <ul class="catalog">
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <img src="https://robohash.org/124.234" width="200" height="200"/>
+              </article>
+            </li>
+
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <ul class="pontos">
+                  <li class="cada"></li>
+                  <li class="cada">
+                    <p>
+                      Научитесь различные техники и подходы для решения сложный задач.
+                    </p>
+                    <p>
+                      В результате соберёте свой багаж навыков и знаний.
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+          <button onclick="resultadoOffFn()" type="button" class="ui-button" style="margin-bottom: 50px;">
+            Хорошо
+          </button>
+        </div>
+      </section>      
+
+      <!-- TRABALHO -->
+      <section id="trabalho" class="subscribe">
+        <div class="container bordas" style="background-color:#ffd000;">
+          <ul class="catalog">
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <img src="https://robohash.org/eassim" width="200" height="200"/>
+              </article>
+            </li>
+
+            <li class="catalog__item">
+              <article data-color-theme="dark" class="catalog-card catalog__item">
+                <ul class="pontos">
+                  <li class="cada"></li>
+                  <li class="cada">
+                    <p>
+                      Вместе с вами оформим ваш портфолио
+                    </p>
+                    <p>
+                      и проводим первое собеседование.
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+          <button onclick="trabalhoOffFn()" type="button" class="ui-button" style="margin-bottom: 50px;">
+            Хорошо
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="tel:+79873804778" class="footer__phone-link ui-link">
+          +7 (987) 380-47-78
+        </a>
+        <span class="footer__caption">
+          Контактный центр
+        </span>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
